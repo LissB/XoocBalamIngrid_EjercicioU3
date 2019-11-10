@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ingrid Xooc</title>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+  <h1>Mis Ejercicios</h1>
+  <div id="messages"></div>
+  <br/>
+  <h3>Cantidad de vocales recibidas</h3><p id="E1"></p>
+  <h3>Cantidad de palabras recibidas</h3><p id="E2"></p>
+  <h3>Cantidad de números contenidos en el mensaje </h3><p id="E3"></p>
+  <h3>Cantidad de palabras que inician con mayúsculas</h3><p id="E4"></p>
+  <h3>Cantidad de palabras que finalizan con letras que no son vocales</h3><p id="E5"></p>
+
+  <form onsubmit="return addMessage(this)">
+    <input type="text" id="texto" placeholder="Ingresa una frase">
+    <input type="submit" value="Enviar!">
+  </form>
+</body>
+</html>
